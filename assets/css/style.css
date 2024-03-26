@@ -1,0 +1,123 @@
+@import url(./global.css);
+
+
+header {
+    height: 505px;
+    padding: 0px 24px;
+    background-image: url(/assets/images/header-background.svg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+header h1 {
+    font-family: "Luckiest Guy";
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+
+    padding-top: 65px;
+    width: 278px;
+    height: 64px;
+
+}
+
+header p, .button {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5rem;
+
+    height: 132px;
+}
+
+.button {
+    border-radius: 28px;
+    background-color: black;
+    height: 54px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#download {
+    background-color: white;
+    color: rgba(35, 39, 42, 1);
+}
+
+#open {
+    background-color: rgba(35, 39, 42, 1);
+    color: white;
+}
+
+#section-01 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main h1 {
+    font-family: "Luckiest Guy";
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgba(35, 39, 42, 1);
+}
+
+main h2 {
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: rgba(35, 39, 42, 1);
+}
+
+main p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(35, 39, 42, 1);
+}
+
+#section-02, #section-04 {
+    background-color: rgba(246, 246, 246, 1);
+    background-origin:initial
+}
+
+#section-01, #section-02, #section-03, #section-04 {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+
+
+
+
+
+footer {
+    height: 140px;
+    background-color: rgba(35, 39, 42, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer picture {
+    height: 45px;
+}
+
+
+
