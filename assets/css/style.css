@@ -1,28 +1,46 @@
 @import url(./global.css);
 
-
 header {
     height: 505px;
     padding: 0px 24px;
     background-image: url(/assets/images/header-background.svg);
     background-size: cover;
 
+
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
+@media screen and (min-width: 580px) {
+    header {
+        background-image: url(/assets/images/header-background02.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 459px;
+    } 
+}
 
 header h1 {
     font-family: "Luckiest Guy";
     font-weight: 400;
-    font-size: 2rem;
+    font-size: calc(2rem + 3vw);
     color: white;
 
     padding-top: 65px;
     width: 278px;
-    height: 64px;
+}
 
+@media screen and (min-width: 580px) {
+    header h1 {
+        margin: 0px auto;
+        text-align: center;
+        font-size: 3.5rem;
+        font-size: 2;
+        width: 313px;
+    }
 }
 
 header p, .button {
@@ -31,8 +49,14 @@ header p, .button {
     font-size: 1rem;
     color: white;
     line-height: 1.5rem;
+}
 
-    height: 132px;
+@media screen and (min-width: 580px) {
+    header p {
+        max-width: 757px;
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .button {
@@ -62,17 +86,28 @@ header p, .button {
     color: white;
 }
 
-#section-01 {
-    display: flex;
-    flex-direction: column;
-}
 
+@media screen and (min-width: 580px) {
+    #button-box {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #download {
+        width: 205px;
+    }
+
+    #open {
+        width: 281px;
+    }
+}
 
 main h1 {
     font-family: "Luckiest Guy";
     font-weight: 400;
     font-size: 2rem;
     color: rgba(35, 39, 42, 1);
+    max-width: 376px;
 }
 
 main h2 {
@@ -91,7 +126,7 @@ main p {
 
 #section-02, #section-04 {
     background-color: rgba(246, 246, 246, 1);
-    background-origin:initial
+    background-origin:initial;
 }
 
 #section-01, #section-02, #section-03, #section-04 {
@@ -101,10 +136,70 @@ main p {
     gap: 27px;
 }
 
+#sec-01-info, #sec-02-info, #sec-03-info, #sec-04-info {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
 
+main picture {
+    display: flex;
+    justify-content: center;
+}
 
+#section-01 img, #section-02 img, #section-03 img, #section-04 img {
+    max-width: 379px;
+}
 
+@media screen and (min-width: 580px) {
+    main h1 {
+        margin: 0 auto;
+        font-size: 2.5rem;
+        max-width: 608px;
+        text-align: center;
+    }
 
+    main h2 {
+        font-size: 2.5rem;
+    }
+
+    #section-01, #section-02, #section-03 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    #sec-01-info, #sec-02-info, #sec-03-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 351px;
+        align-content: center;
+    }
+
+    #section-04 {
+        gap: 16px;
+    }
+
+    #section-04 p {
+        max-width: 802px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    #section-01 img, #section-02 img, #section-03 img, #section-04 img  {
+        max-width: 607px;
+    }
+}
+
+@media screen and (min-width: 1282px) {
+    #section-02 {
+        flex-direction: row-reverse;
+    }
+}
 
 footer {
     height: 140px;
@@ -119,5 +214,8 @@ footer picture {
     height: 45px;
 }
 
-
-
+@media screen and (min-width: 580px) {
+    footer img {
+        width: 230px;
+    }
+}
